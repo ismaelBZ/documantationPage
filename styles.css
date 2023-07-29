@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background: #edf;
+}
+.nav-wrapper {
+    position: relative;
+}
+nav {
+    position: fixed;
+    top: 15px;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: block;
+    }
+    .nav-wrapper {
+        display: none;
+    }
+}
